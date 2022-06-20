@@ -6,3 +6,4 @@
 3.RGBled==>https://wokwi.com/projects/333802704403956307<br>
 4.LCD==>https://wokwi.com/projects/322062421191557714<br>
 5.servomotor==>https://wokwi.com/projects/334978204470084179<br>
+6.servomotor with for loop==>https://wokwi.com/projects/334981399090037332
