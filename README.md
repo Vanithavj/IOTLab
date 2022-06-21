@@ -8,4 +8,4 @@
 5.servomotor==>https://wokwi.com/projects/334978204470084179<br>
 6.servomotor with for loop==>https://wokwi.com/projects/334981399090037332<br>
 7.servometer with potentiometer==>https://wokwi.com/projects/334983168624951890<br>
-8.
+8.Buzzer==>https://wokwi.com/projects/335065985356661332
