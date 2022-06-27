@@ -12,3 +12,4 @@
 9.Buzzer with pushbutton==>https://wokwi.com/projects/335068472263311956<br>
 10.Ultrasonic sensor==>https://wokwi.com/projects/335072171637342802<br>
 11.Servomotor with buzzer==>https://wokwi.com/projects/335609458476450387<br>
+12.Ultrasonic sensor with buzzer==>https://wokwi.com/projects/335073264458007124<br>
