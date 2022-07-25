@@ -18,3 +18,4 @@
 15.Potentiometer with led                  ==>https://wokwi.com/projects/335701631590990420<br>
 16.servomotor with pushbutton              ==>https://wokwi.com/projects/335703833682379347<br>
 17.lablist1                                ==>https://wokwi.com/projects/338148483867345490<br>
+18.lablist2                                ==>https://wokwi.com/projects/337602684471214674<br>
