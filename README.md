@@ -20,3 +20,39 @@
 17.lablist1                                ==>https://wokwi.com/projects/338148483867345490<br>
 18.lablist2                                ==>https://wokwi.com/projects/337602684471214674<br>
 19.lablist1  with ESP32                    ==>https://wokwi.com/projects/338225981441442386<br>
+
+
+#define BLYNK_PRINT Serial
+const int trigPin = D6;
+const int echoPin = D5;
+// defines variables
+long duration;
+int distance;
+float inch;
+void setup() {
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+  Serial.begin(9600); // Starts the serial communication
+}
+void loop() {
+  // Clears the trigPin
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigPin on HIGH state for 10 micro seconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  // Reads the echoPin, returns the sound wave travel time in microseconds
+  duration = pulseIn(echoPin, HIGH);
+  // Calculating the distance
+  distance = duration * 0.034 / 2;
+  // Prints the distance on the Serial Monitor
+  inch = distance / 2.54;
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm ");
+  Serial.print("Inch    : ");
+  Serial.print(inch);
+  Serial.println(" inches ");
+  delay(500);
+}
