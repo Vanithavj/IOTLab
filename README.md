@@ -22,37 +22,40 @@
 19.lablist1  with ESP32                    ==>https://wokwi.com/projects/338225981441442386<br>
 
 
-#define BLYNK_PRINT Serial
-const int trigPin = D6;
-const int echoPin = D5;
-// defines variables
-long duration;
-int distance;
-float inch;
-void setup() {
-  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-  Serial.begin(9600); // Starts the serial communication
-}
-void loop() {
-  // Clears the trigPin
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  // Sets the trigPin on HIGH state for 10 micro seconds
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  // Reads the echoPin, returns the sound wave travel time in microseconds
-  duration = pulseIn(echoPin, HIGH);
-  // Calculating the distance
-  distance = duration * 0.034 / 2;
-  // Prints the distance on the Serial Monitor
-  inch = distance / 2.54;
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.println(" cm ");
-  Serial.print("Inch    : ");
-  Serial.print(inch);
-  Serial.println(" inches ");
-  delay(500);
-}
+************HARDWARE*************<br>
+#Ultrasonic sensor<br>
+
+#define BLYNK_PRINT Serial<br>
+const int trigPin = D6;<br>
+const int echoPin = D5;<br>
+// defines variables<br>
+long duration;<br>
+int distance;<br>
+float inch;<br>
+void setup() {<br>
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output<br>
+  pinMode(echoPin, INPUT); // Sets the echoPin as an Input<br>
+  Serial.begin(9600); // Starts the serial communication<br>
+}<br>
+void loop() {<br>
+  // Clears the trigPin<br>
+  digitalWrite(trigPin, LOW);<br>
+  delayMicroseconds(2);<br>
+  // Sets the trigPin on HIGH state for 10 micro seconds<br>
+  digitalWrite(trigPin, HIGH);<br>
+  delayMicroseconds(10);<br>
+  digitalWrite(trigPin, LOW);<br>
+  // Reads the echoPin, returns the sound wave travel time in microseconds<br>
+  duration = pulseIn(echoPin, HIGH);<br>
+  // Calculating the distance<br>
+  distance = duration * 0.034 / 2;<br>
+  // Prints the distance on the Serial Monitor<br>
+  inch = distance / 2.54;<br>
+  Serial.print("Distance: ");<br>
+  Serial.print(distance);<br>
+  Serial.println(" cm ");<br>
+  Serial.print("Inch    : ");<br>
+  Serial.print(inch);<br>
+  Serial.println(" inches ");<br>
+  delay(500);<br>
+}<br><br><br>
