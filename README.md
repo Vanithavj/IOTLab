@@ -115,3 +115,81 @@ void loop() {<br>
   }<br>
 delay(100);<br>
 }<br><br>
+******************************************************************************************************************************************************************
+
+int red = D1;<br> 
+int green = D6;<br> 
+int blue = D7; //GROUND IS CONNECTED TO 3V <br>
+
+void setup() <br>
+{ <br>
+pinMode(red, OUTPUT); <br>
+pinMode(green, OUTPUT);<br>
+pinMode(blue, OUTPUT);<br>
+
+}<br>
+
+void loop()<br>
+{ <br>
+displayColor(0b100); //RED <br>
+delay(1000);<br>
+displayColor(0b010);<br>
+//GREEN delay(1000); <br>
+displayColor(0b001); //BLUE<br>
+delay(1000);<br>
+displayColor(0b101); //MAGENTA <br>
+delay(1000); <br>displayColor(0b011); //CYAN <br>
+delay(1000); <br>displayColor(0b110); //YELLOW<br>
+delay(1000);<br> displayColor(0b111); //WHITE<br>
+delay(1000);<br> 
+}<br>
+
+void displayColor(byte color) <br>
+{ <br>
+digitalWrite(red, !bitRead(color, 2));<br>
+digitalWrite(green, !bitRead(color, 1)); <br>
+digitalWrite(blue, !bitRead(color, 0));<br>
+}<br>
+******************************************************************************************************************************************************************
+IR_LED <br>
+int ir=D7;<br>
+int led=D5; <br>
+void setup() <br>
+{ // put your setup code here, to run once: <br>
+pinMode(ir,INPUT); <br>
+pinMode(led,OUTPUT); <br>
+Serial.begin(9600);<br>
+<br>
+}
+
+void loop() <br>
+{ // put your main code here, to run repeatedly: <br>
+int irvalue=digitalRead(ir); <br>
+if(irvalue==LOW) <br>
+{ <br>
+Serial.println("LOW");<br>
+digitalWrite(led,HIGH); <br>
+} <br>
+else <br>
+{ Serial.println("HIGH"); <br>
+digitalWrite(led,LOW);<br>
+} <br>
+delay(100);<br>
+}<br>
+
+*******************************************************************************************************************************************************************
+LDR <br>
+const int ldrPin=A0;<br>
+void setup()<br>
+{ <br>
+Serial.begin(9600);<br>
+pinMode(ldrPin,INPUT); <br>
+} <br>
+void loop() <br>
+{ 
+int rawData = analogRead(ldrPin);<br>
+Serial.println(rawData); <br>
+delay(1000);<br>
+}<br>
+<br><br><br>
+**************************************************************************************************************************************************************************
