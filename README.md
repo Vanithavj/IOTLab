@@ -21,6 +21,8 @@
 18.lablist3                                ==>https://wokwi.com/projects/337602684471214674<br>
 19.lablist1  with ESP32                    ==>https://wokwi.com/projects/338225981441442386<br>
 
+20.Liquid crystal                          ==>https://wokwi.com/projects/340855309309313619
+
 
 ************HARDWARE*************<br>
 #Ultrasonic sensor<br>
