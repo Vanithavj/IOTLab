@@ -22,6 +22,7 @@
 19.lablist1  with ESP32                    ==>https://wokwi.com/projects/338225981441442386<br>
 
 20.Liquid crystal                          ==>https://wokwi.com/projects/340855309309313619
+21.JOYSTICK                                ==>https://wokwi.com/projects/296234816685212169
 
 
 ************HARDWARE*************<br>
